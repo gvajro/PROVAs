@@ -1,6 +1,150 @@
-img{
-width: 120px;
+body{
+position: relative;
 }
-.navbar-brand{
-padding: 0;
+h1{
+text-transform: uppercase;
+}
+.navbar-brand {
+    padding: 0 15px;
+  }
+  .navbar-brand img{
+  width: 130px;
+  }
+.navbar-default{
+width: 100%;
+z-index: 2;
+}
+.affix{
+background-color:rgba(248, 178, 52, 0.9);
+}
+
+/******************* CHI SIAMO***********************/
+.chisiamo h1,.ricette h1,.contatti h1{
+  margin: 40px 0;
+  position: relative;
+}
+
+.chisiamo h1:after,.ricette h1:after,.slide__img--testo h1:after,.contatti h1:after{
+    content: "";
+    position: absolute;
+    left:0%;
+    top: 40px;
+    width: 60px;
+    height: 3px;
+    background: orange;
+    margin: 4px 0;
+}
+
+.chisiamo h1:after,.ricette h1:after,.slide__img--testo h1:after,.contatti h1:after{
+    content: "";
+    position: absolute;
+    left:0%;
+    top: 40px;
+    width: 25px;
+    height: 4px;
+    background: #f15a29;
+}
+
+.chisiamo__testo--titolo{
+text-transform: uppercase;
+display: flex;
+align-items: center;
+margin: 15px 0;
+}
+.chisiamo__testo--titolo h2{
+margin: 0;
+}
+.chisiamo__testo--bottone{
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font: bold 16px Arial, Helvetica, sans-serif;
+  color: #fff;
+  padding: 10px 20px;
+  border: solid 1px #FFA500;
+  background: #FFA500;
+  max-width: 100px;
+  border-radius: 10px;
+}
+    .chisiamo__testo--bottone a{
+    color: #fff;
+    text-decoration: none;
+    }
+    .chisiamo__testo--bottone a:hover{
+    color: #fAfAfA;
+    text-decoration: none;
+    }
+
+.chisiamo__testo--logo{
+width: 65px;
+margin-right: 15px;
+}
+/************************************************************/
+
+.hero__image {
+background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5)),url('../image/hero__image.jpg');
+background-size: cover;
+background-position: center;
+-webkit-transform: scale(1);
+transform: scale(1);
+-webkit-transition: .3s ease-in-out;
+transition: .4s ease-in-out;
+height: 40vw;
+width: auto;
+position: relative;
+margin-top: 10px;
+margin-bottom: 70px;
+}
+.hero__image:hover{
+ 	-webkit-transform: scale(1.1);
+  	transform: scale(1.1);
+}
+
+.hero__image--text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 50;
+  left: 50;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  z-index: 1;
+  }
+  .hero__image--text:hover{
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.3);
+    opacity: 1;
+    color: white;
+  }
+    .hero__image--text h1{
+    font-size: 50px;
+    }
+/*********SWIPER******************/
+.swiper-container {
+  margin: 100px 0;
+    height: 90vh;
+    width: 100%;
+}
+
+.swiper-slide{
+  display: flex;
+  justify-content: flex-start;
+}
+
+  .swiper-slide img{
+  width: 70%;
+  }
+
+.swiper-slide_text{
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.swiper-slide_text p{
+  margin-top: 30px;
+font-size: 20px;
 }
