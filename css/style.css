@@ -6,6 +6,20 @@ font-family: 'Roboto', sans-serif;
 h1{
 text-transform: uppercase;
 }
+a{
+text-decoration: none;
+color: white;
+}
+a:hover{
+color: #f15a29;
+text-decoration: none;
+}
+
+ul li{
+text-decoration: none;
+display: inline;
+}
+
 .navbar-brand {
     padding: 0 15px;
   }
@@ -75,7 +89,7 @@ margin-right: 15px;
 }
 /************************************************************/
 
-.hero__image {
+.hero__image,.hero__image--prodotti {
 background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5)),url('../image/hero__image.jpg');
 background-size: cover;
 background-position: center;
@@ -144,24 +158,10 @@ margin-bottom: 70px;
 font-size: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /************************PRODOTTI**********************/
-
+.hero__image--prodotti {
+background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5)),url('../image/hero__image--prodotti.jpg');
+}
 .prodotti__contenitore{
     width: 300px;
     height: 200px;
@@ -185,7 +185,7 @@ font-size: 20px;
 }
 .prodotti__contenitore img {
     width: 100%;
-    position: relative
+    position: relative;
 }
 .prodotti__contenitore h2 {
     text-transform: uppercase;
@@ -195,7 +195,7 @@ font-size: 20px;
     font-size: 17px;
     padding: 10px;
     background: #f15a29;
-    margin: 20px 0 0 0
+    margin: 20px 0 0 0;
 }
 .prodotti__contenitore p {
     font-family: Georgia, serif;
@@ -204,7 +204,7 @@ font-size: 20px;
     position: relative;
     background: #f15a29;
     padding: 10px 20px 20px;
-    text-align: center
+    text-align: center;
 }
 .prodotti__contenitore a.info {
     display: inline-block;
@@ -223,7 +223,6 @@ font-size: 20px;
 }
 .prodotti__contenitore--effetto .prodotti__contenitore--maschera {
    background-color: #f15a29);
-   opacity: 1;
    transform: translate(460px, -100px) rotate(180deg);
    transition: all 0.2s 0.4s ease-in-out;
 }
@@ -240,11 +239,10 @@ font-size: 20px;
    transform: translateY(-200px);
    transition: all 0.2s ease-in-out;
 }
-.view-third:hover .prodotti__contenitore--maschera {
-   filter: alpha(opacity=100);
-   opacity: 1;
-   transition-delay: 0s;
-   transform: translate(0px, 0px);
+.prodotti__contenitore--effetto:hover .prodotti__contenitore--maschera {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition-delay: 0s;
+ transform: translate(0px, 0px);
 }
 .prodotti__contenitore--effetto:hover h2 {
    transform: translateY(0px);
@@ -257,4 +255,60 @@ font-size: 20px;
 .prodotti__contenitore--effetto:hover a.info {
    transform: translateY(0px);
    transition-delay: 0.3s;
+}
+/****************contatti***********************************/
+
+.contatti__contenitore{
+background-color:rgba(248, 178, 52, 0.9);
+  width: 100%;
+}
+.contatti__logo{
+display: flex;
+justify-content: center;
+}
+
+.contatti__logo img{
+width: 200px;
+margin: 20px 0;
+}
+.contatti__info h1{
+text-align: center;
+font-size: 20px;
+color: #f15a29;
+}
+
+.contatti__info--menurapido ul{
+display: flex;
+flex-direction: column;
+margin: 5px 0;
+padding: 0;
+text-align: center;
+}
+.contatti__info--adv{
+  display: flex;
+  justify-content: center;
+ margin: 30px 0;
+}
+.contatti__info--adv p{
+  padding-right: 20px;
+  color: white;
+}
+
+.contatti__info--social ul{
+display: flex;
+justify-content: center;
+padding: 0;
+}
+.contatti__info--social li{
+  font-size: 30px;
+padding:0 10px;
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
 }
